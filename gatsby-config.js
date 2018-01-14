@@ -12,13 +12,6 @@ module.exports = {
     `gatsby-plugin-glamor`,
     `gatsby-transformer-remark`,
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `src`,
-        path: `${__dirname}/src`,
-      }
-    },
-    {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
