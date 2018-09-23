@@ -2,13 +2,26 @@ import React from "react";
 import g from "glamorous";
 import { css } from "glamor";
 import Link from "gatsby-link";
+import { StaticQuery, graphql} from "gatsby"
 
 import { rhythm } from "../utils/typography";
 
 const linkStyle = css({ float: `right` });
 
-export default ({ children, data }) =>
-  <g.Div
+export default ({ children }) => (
+
+  <StaticQuery
+    query={graphql`
+      query LayoutQuery {
+        site {
+          siteMetadata {
+            title
+          }
+        }
+      }
+    `}
+    render={data =>(
+      <g.Div
     margin={`0 auto`}
     maxWidth={700}
     padding={rhythm(2)}
@@ -26,15 +39,9 @@ export default ({ children, data }) =>
     <Link className={linkStyle} to={`/about/`}>
       About
     </Link>
-    {children()}
+    {children}
   </g.Div>
-
-  export const query = graphql`
-    query LayoutQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `
+    )}
+  />
+  )
+  
