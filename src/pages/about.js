@@ -10,6 +10,7 @@ export default ({data}) =>
         We're the only site running on your computer dedicated to showing the best
         photos and videos of pandas eating lots of food.
       </p>
+      <p>Last Updated: September 23, 2018</p>
     </div>
   </Layout>
   
