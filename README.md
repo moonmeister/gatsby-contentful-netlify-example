@@ -1,6 +1,6 @@
 # gatsby-contentful-netlify-example
 
-Check it out here: **https://modest-mayer-d40337.netlify.com/**
+Check it out here: **https://gatsby-contentful-netlify-example-d40337.netlify.app/**
 
 Based on the [Gatsby](https://www.gatsbyjs.org/) [tutorial part four](https://www.gatsbyjs.org/tutorial/part-four/).
 
